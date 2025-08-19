@@ -6,5 +6,5 @@ Requires C++17 or newer
 TODOS:
 - Add rules for blackjack (two card 21)
 - Add split functionality
-- Add option to player several rounds
+- Add option to play several rounds
 - Keep track of points over several rounds
