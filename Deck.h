@@ -13,5 +13,6 @@ public:
 	Deck();
 	Card dealCard();
 	void shuffle();
+	static Card dealRandomCard();
 };
 

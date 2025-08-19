@@ -28,3 +28,10 @@ void Deck::shuffle()
 {
 	std::shuffle(m_cards.begin(), m_cards.end(), Random::mt);
 }
+
+Card Deck::dealRandomCard()
+{
+	Card::Rank rank{ static_cast<Card::Rank>(Random::get(0,Card::numberOfRanks - 1)) };
+	Card::Suit suit{ static_cast<Card::Suit>(Random::get(0,Card::numberOfSuits - 1)) };
+	return Card(rank,suit);
+}
