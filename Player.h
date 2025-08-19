@@ -1,6 +1,5 @@
 #pragma once
 #include "Card.h"
-#include "Deck.h"
 #include "Rules.h"
 #include <vector>
 
@@ -15,7 +14,9 @@ public:
 	Player() = default;
 
 	int score() const { return BlackjackRules::getHandScore(m_cards); }
-	
+
 	void addCard(Card card);
+
+	void printCards() const;
 
 };
