@@ -31,7 +31,7 @@ int BlackjackRules::getHandScore(const std::vector<Card>& cards) {
 		}
 	}
 	// if score > 21 and the hand contains aces, each ace can count as 1 insted
-	while (score > 21 && aces > 1) {
+	while (score >= BlackjackRules::bustScore && aces > 1) {
 		score -= 10;
 		aces -= 1;
 	}
