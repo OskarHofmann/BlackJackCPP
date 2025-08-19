@@ -16,6 +16,6 @@ public:
 
 	int score() const { return BlackjackRules::getHandScore(m_cards); }
 	
-	void addCard(Card& card);
+	void addCard(Card card);
 
 };
