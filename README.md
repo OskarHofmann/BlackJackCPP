@@ -8,3 +8,4 @@ TODOS:
 - Add split functionality
 - Add option to play several rounds
 - Keep track of points over several rounds
+- Add handling for deck running out of cards
